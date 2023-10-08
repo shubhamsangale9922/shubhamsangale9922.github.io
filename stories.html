@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geologist</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .head1{
+            font-weight: bold;
+        }
+        .bghead{
+            background-color: #1b2b85;
+        }
+    </style>
+
+    <script>
+        function bodyLoad(){
+            
+
+            timeId()
+        }
+        function showDate(){
+            var date = new Date()
+            document.getElementById('timeDate').innerHTML = date
+        }
+        function timeId(){
+            setInterval(showDate,1000)
+        }
+
+    </script>
+</head>
+<body class="container-fluid bg-dark" onload="bodyLoad()">
+    <div class="row bghead p-2">
+        <div class="col-12 text-center">
+            <h1 class="text-white">Nasa Space Apps Challenge</h1>
+            <h1 class="text-white">Be a Space Geologist</h1>
+            <h3 class="text-white">By a Team <u>"Earth's Envoys"</u></h3>
+        </div>
+       </div>
+       <div class="row bg-dark">
+            <div class="col-12 p-1">
+                <div class="text-white text-center" id="timeDate"></div>
+            </div>
+       </div>
+    
+    
+       <div class="row mt-3 mb-3">
+        <div class="col-12 text-center text-danger">
+            <h1 class="head1">Nasa Observatory Stories</h1>
+        </div>
+       </div>
+       <div class="container mb-5">
+            <div class="row bg-secondary">
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/151000/151085/mountainpassmine_oli_2022359.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Mountain Pass Rare Earth Mine</h3>
+                            <p style="text-align: justify;">The town of Mountain Pass, California, is home to the largest rare-earth element mine in the U.S. Its story began in the 1940s, when prospectors went searching for uranium. This image shows Mountain Pass Mine, located in the Mojave Desert in southeastern California. The mine displays a gold color within an open-pit area that extends 800 meters (2,600 feet) across and more than 180 meters deep. Underlying the mine pit are carbonatite deposits that host bastnaesite—a major source of rare earth elements.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Mountain_Pass_mine" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/92000/92598/siccar_oli_2018185.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">The Abyss of Time</h3>
+                            <p style="text-align: justify;">One of the central doctrines of geology is a concept called uniformitarianism—the idea that many of Earth’s geologic processes act in the same manner and with the same intensity in the present as they did in the past. For instance, the processes of erosion and sedimentation—which wear down rocks and create sand and dirt—are thought to operate in the same general way now as they did hundreds of millions of years ago.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Deep_time" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- second row  -->
+            <div class="row bg-secondary mt-4">
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/151000/151016/turkeylandslidezm2_oli2_2022042.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Landslides in Türkiye</h3>
+                            <p style="text-align: justify;">The magnitude 7.8 and 7.5 earthquakes that shook parts of Türkiye and Syria on February 6, 2023, caused widespread destruction, some of which extended beyond urban areas. In the days since the earthquakes struck, many new landslides became visible in satellite images. The Operational Land Imager-2 (OLI-2) on Landsat 9 acquired an image (above-right) that shows a group of small landslides along a valley east of Sarıseki, Türkiye, on February 14, 2023. The other image (left), also from OLI-2, shows the same area on February 11, 2022, about a year before the earthquakes.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://appliedsciences.nasa.gov/what-we-do/disasters/disasters-activations/turkiye-syria-earthquakes-2023" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/150000/150811/iss066e182850.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Ridges and Valleys of the Zagros Mountains</h3>
+                            <p style="text-align: justify;">This astronaut photograph, taken from the International Space Station, illustrates the undulating patterns formed by the geology of the Zagros Mountains in southern Iran. The image shows a 300-kilometer (190-mile) portion of the larger Zagros Range (1600 kilometers/990 miles), which runs along the northern coast of the Persian Gulf. Several small islands are visible in the gulf.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Zagros_Mountains" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third row  -->
+            <div class="row bg-secondary mt-4">
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/150000/150604/iss061e098063.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Eroded Beauty in the Sahara Desert</h3>
+                            <p style="text-align: justify;">Taken by astronauts aboard the International Space Station, this detailed photograph shows dark surfaces in the hyper-arid eastern Sahara Desert in Sudan. These surfaces are flat-topped mesas that rise 70–140 meters (230–460 feet) above the surrounding lighter-toned landscape. The mesas are defined by vertical cliffs cut into by numerous small gullies, producing a heavily indented pattern. For scale, the smaller mesa measures 10 kilometers (6 miles) long.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Sahara" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/150000/150360/lakeohrid_oli2_2022231.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">A Pair of Ancient Lakes</h3>
+                            <p style="text-align: justify;">Lake Ohrid and Lake Prespa, two of Europe’s oldest lakes, lie in a mountainous area along the borders of North Macedonia, Albania, and Greece. The lakes have persisted for at least 1 million years and possibly longer.
+
+                                The Operational Land Imager-2 (OLI-2) on Landsat 9 captured this natural-color image of the lakes on August 19, 2022. Ohrid is the larger and deeper of the two, with a mean depth of 155 meters (509 feet). Prespa has a mean depth of 14 meters (45 feet).</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Ancient_lake" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- fourth row  -->
+            <div class="row bg-secondary mt-4">
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/150000/150076/lena_oli2_2022168.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Lena River Sedimentation</h3>
+                            <p style="text-align: justify;">Winding 4,400 kilometers (2,800 miles) across northeastern Siberia from its headwaters in the Baikal Mountains, the Lena River is one of the longest rivers in the world. Along the way, the river and its 500 tributaries gather sediment from a drainage basin covering 2.5 million square kilometers and carry it toward the river’s massive delta.</p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Lena_(river)" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"> <!-- Adjusted for responsiveness -->
+                    <div class="card">
+                        <div class="card-header bg-info p-0" style="height: 280px;">
+                            <img style="height: 100%; width: 100%;" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/42000/42643/stanthony_ast_2009317.jpg" alt="">
+                        </div>
+                        <div class="card-body" style="height: 200px; overflow-y: scroll;">
+                            <h3 class="text-center">Alluvial Fans in Northeastern Egypt</h3>
+                            <p style="text-align: justify;">In northeastern Egypt, roughly 33 kilometers (20 miles) west of the Gulf of Suez, rugged hills give way to flat terrain. This abrupt landscape transition is obvious from the perspective of a satellite, thanks in part to an arid environment that minimizes plant cover that might blur the transition. The Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) on NASA’s Terra satellite captured this false-color image of the region on November 13, 2009.
+
+                            </p>
+                        </div>
+                        <div class="card-footer text-center" style="height: 80px;">
+                            <button class="btn btn-info mt-2">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Alluvial_fan" style="font-size: 25px; color: black;">Learn More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+</body>
+</html> 
